@@ -3,6 +3,7 @@ const app = express();
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
 
 //configuring environment variables
 require('dotenv').config();
@@ -21,6 +22,8 @@ app.use(bodyParser.urlencoded({
   limit: '10mb',
   extended: false
 }));
+//to convert POST request from client into something which is defined inside '_method'
+app.use(methodOverride('_method'));
 
 //redirect routes
 app.use('/', indexRouter);
