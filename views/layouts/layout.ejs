@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mybrary</title>
+  <link rel="stylesheet" href="/stylesheets/main.css">
   <!-- filepond stylesheet -->
   <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
   <!-- filepond image preview css -->
@@ -20,8 +21,12 @@
   <script defer src="/js/fileUpload.js"></script>
 </head>
 <body>
-  <%- include('../partials/header.ejs') %>
-  <%- include('../partials/errorMessage.ejs') %>
-  <%- body %>
+  <div class="container">
+    <%- include('../partials/header') %>
+    <div class="inner-container">
+      <%- include('../partials/errorMessage') %>
+      <%- body %>
+    </div>
+  </div>
 </body>
 </html>

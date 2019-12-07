@@ -1,0 +1,21 @@
+:root {
+  --color-button-border: black;
+  --color-primary-button-text: hsl(var(--color-hue-value), 100%, 17%);
+  --color-primary-button-background: hsl(var(--color-hue-value), 100%, 83%)
+}
+
+.btn {
+  border: 1px solid var(--color-button-border);
+  text-decoration: none;
+  font-family: 'Gotham Rounded';
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--color-primary-button-background);
+  color: var(--color-primary-button-text);
+}
