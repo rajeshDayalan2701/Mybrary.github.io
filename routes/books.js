@@ -56,7 +56,9 @@ router.post('/', async (req, res) => {
     description: req.body.description
   });
   //sets cover image and cover image type for book
-  saveCover(book, req.body.cover);
+  if (req.body.cover != null && req.body.cover != '') {
+    saveCover(book, req.body.cover);
+  }
 
   try {
     const newBook = await book.save();

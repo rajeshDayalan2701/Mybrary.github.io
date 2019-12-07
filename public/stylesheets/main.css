@@ -2,12 +2,18 @@
 @import 'shared/variables.css';
 @import 'shared/header.css';
 @import 'shared/buttons.css';
-
+@import 'shared/form.css';
+@import 'shared/author.css';
+@import 'shared/book.css';
 
 :root {
   font-family: 'Gotham Rounded';
   font-size: 20px;
   color: var(--color-text-light);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -22,4 +28,8 @@ body {
 
 .inner-container {
   margin: 0 2rem;
+}
+
+.error-message {
+  color: hsl(var(--color-danger-hue-value), 100%, 50%);
 }
