@@ -65,6 +65,28 @@
     display: flex;
     justify-content: center;
   }
+
+  .flex-display-sm-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .book-details {
+    flex-direction: column;
+  }
+
+  .book-details-grid {
+    margin-left: 0;
+    grid-template-columns: none;
+    grid-gap: 0;
+    justify-content: center;
+  }
+
+  .mb-1r-sm {
+    margin-bottom: 1rem;
+  }
 }
 
 
