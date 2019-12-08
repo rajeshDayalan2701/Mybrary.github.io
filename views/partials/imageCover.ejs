@@ -4,7 +4,7 @@
 <div class="book-grid <%= bookGridClass %>">
   <% books.forEach((book) => { %>
     <a class="flex-display-sm" href="/books/<%= book.id %>">
-      <img class="book-cover <%= bookCoverClass %>" height="150" width="100" src="<%= book.coverImagePath %>">
+      <img class="book-cover <%= bookCoverClass %>" src="<%= book.coverImagePath %>">
     </a>
   <% }) %>
 </div>
