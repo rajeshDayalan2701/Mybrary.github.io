@@ -45,3 +45,27 @@
   font-size: 2rem;
   font-weight: 500;
 }
+
+@media (max-width: 400px) {
+  .page-header {
+    text-align: center;
+  }
+
+  .header-nav {
+    margin-bottom: 0rem;
+    justify-content: center;
+  }
+
+  .header-nav .header-title {
+    margin-bottom: 1rem;
+  }
+
+  .header-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-nav ul li {
+    margin-bottom: 0.5rem;
+  }
+}

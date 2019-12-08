@@ -8,3 +8,15 @@
 .author-name {
   font-size: 1.5rem;
 }
+
+@media (max-width: 400px) {
+  .author-row {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .author-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}

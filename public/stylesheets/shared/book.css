@@ -60,3 +60,11 @@
   justify-self: stretch;
 }
 
+@media (max-width: 400px) {
+  .flex-display-sm {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+

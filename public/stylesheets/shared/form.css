@@ -80,3 +80,19 @@
   color: var(--color-text-light);
   font-size: inherit;
 }
+
+@media (max-width: 400px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-field {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .form-row.btn-row {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

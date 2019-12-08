@@ -53,3 +53,9 @@
 .btn-row > *:first-child {
   margin-left: 0;
 }
+
+@media (max-width: 400px) {
+  .btn-row {
+    justify-content: center;
+  }
+}
