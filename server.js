@@ -10,8 +10,11 @@ require('dotenv').config();
 
 //import all routers
 const indexRouter = require('./routes/index');
+const loginRouter = require('./routes/login');
 const authorRouter = require('./routes/authors');
 const bookRouter = require('./routes/books');
+const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
@@ -26,7 +29,9 @@ app.use(bodyParser.urlencoded({
 app.use(methodOverride('_method'));
 
 //redirect routes
-app.use('/', indexRouter);
+
+// app.use('/', indexRouter);
+app.use('/', loginRouter);
 app.use('/authors', authorRouter);
 app.use('/books', bookRouter);
 
