@@ -3,8 +3,9 @@
 
 <div class="book-grid <%= bookGridClass %>">
   <% books.forEach((book) => { %>
-    <a class="flex-display-sm" href="/books/<%= book.id %>">
+    <a class="flex-display-sm display-title" href="/books/<%= book.id %>">
       <img class="book-cover <%= bookCoverClass %>" src="<%= book.coverImagePath %>">
+      <h3 class="book-title"><%= book.title %></h3>
     </a>
   <% }) %>
 </div>
